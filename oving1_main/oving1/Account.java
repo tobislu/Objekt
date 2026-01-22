@@ -4,6 +4,10 @@ public class Account {
     private double balance = 0.0;
     private double interestRate = 0.0;
 
+    public Account(){
+        
+    }
+
     public void deposit(double amount) {
         if (amount >= 0) {
             balance += amount;
