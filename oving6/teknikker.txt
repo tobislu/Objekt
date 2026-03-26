@@ -1,0 +1,13 @@
+Delegering:
+Delegering betyr at et objekt utfører en oppgave ved å la et annet 
+objekt gjøre jobben. Dette gir ofte bedre modulær design, fordi ansvar
+separeres. For eksempel kan en Clerk beregne selv, men delegere printing til en Printer. 
+I “The Office” kan en Manager delegere oppgaver videre til ansatte, som 
+gjør at manageren fungerer som en koordinator.
+
+Observatør–observert:
+Observatør–observert brukes når flere objekter trenger å 
+holdes oppdatert på endringer i et annet objekt. Det observerte objektet (subject) 
+lagrer en liste av observers/listeners og varsler dem via en metode når tilstanden 
+endres (callback). Dette gir løs kobling: Stock trenger ikke kjenne detaljene til 
+StockIndex, bare at den implementerer StockListener.
